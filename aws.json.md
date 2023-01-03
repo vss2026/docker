@@ -1,0 +1,7 @@
+- **name** : container의 이름
+- **image** : Docker container를 구축 할 Docker repository의 DockerImage 이름
+- **hostname** : 호스트 이름을 이용해서 docker-compose로 생성된 다른 container에서 접근이 가능
+- **essential** : container가 실패할 경우 작업을 중지해야 한다면 true ex) nginx container 실패 시 다른 container도 동작에 필요성이 없음, 필수적이지 않은 container는 인스턴스의 나머지 container에 영향을 미치치 않고 종료 되거나 충돌 할 수 있음.
+- **memory** : container용으로 예약할 container 인스턴스의 메모리 양. memory 또는 memoryReservation 파라미터 중 하나 또는 모두에 0이 아닌 정수를 지정 함.
+- **portMappings** : container에 있는 네트워크 지점을 호스트에 있는 지점에 매핑
+- **links**: 연결할 container의 목록. 연결된 container는 서로를 검색하고 안전하게 통신이 가능.
